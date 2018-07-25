@@ -1,0 +1,124 @@
+html{
+	width:100%;
+	margin:0px; padding:0px;
+	/* height: 1682px; */
+}
++
+body {
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+.main{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	/* background-image: url("img/background.png"); */
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+	font-family: "Helvetica Neue";
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5em;
+}
+
+h1{
+	text-transform: uppercase;
+	font-family: Kiona;
+	text-decoration: none;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 2em 0;
+}
+
+.content{
+		padding: 1em 16em;
+}
+
+.content > div{
+		padding: 3em 0em;
+}
+
+.content p{
+	color: #4E4E4E;
+}
+header {
+	position: relative;
+}
+
+header h1{
+		opacity: 0.3;
+}
+
+header p{
+	text-align: center;
+}
+
+.header-images{
+	display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 3em 0em;
+}
+
+.header-images img{
+	width: 12em;
+	height: 100%;
+}
+
+.brand-name{
+	text-transform: uppercase;
+	color: #EC484E;
+	font-family: Kiona;
+}
+
+.steps-wrapper{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 2em;
+}
+
+.steps-header{
+	display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.steps{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 2em;
+}
+
+.steps p{
+	padding-top: 1em;
+}
+
+.steps img{
+	width: 10em;
+	align-self: center;
+}
+
+.sign-up{
+	background-color: #000;
+	height: 200px;
+}
+
+.main-background {
+	position: absolute;
+	width: 21vw;
+	height: 32vw;
+	top: 0;
+	left: 0;
+	background-image: url("img/nav-image.jpg");
+	background-size: 200%;
+	background-position-x: -45px;
+  /* set height to pixels if you want angle to change with screen width */
+}
