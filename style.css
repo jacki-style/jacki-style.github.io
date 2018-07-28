@@ -19,6 +19,7 @@ body {
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
 	font-family: "Helvetica Neue";
+	font-size: 18px;
 }
 
 nav{
@@ -27,22 +28,42 @@ nav{
 	align-items: center;
 	height: 5em;
 }
+/*
+ul {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, auto) 1fr;
+  grid-column-gap: 5px;
+  justify-items: center;
+}
+
+li:nth-child(1) { grid-column-start: 2; } */
+
 
 h1{
 	text-transform: uppercase;
 	font-family: Kiona;
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 200%;
 	text-align: center;
 	margin: 2em 0;
 }
 
+h2{
+	text-transform: uppercase;
+	font-family: Kiona;
+	text-decoration: none;
+	/* font-size: 200%; */
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
 .content{
-		padding: 1em 16em;
+		padding: 0em 8em;
 }
 
 .content > div{
-		padding: 3em 0em;
+		/* padding: 2em 0em; */
 }
 
 .content p{
@@ -50,14 +71,19 @@ h1{
 }
 header {
 	position: relative;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 header h1{
-		opacity: 0.3;
+		opacity: 0.2;
 }
 
 header p{
-	text-align: center;
+	/* text-align: center; */
 }
 
 .header-images{
@@ -82,23 +108,36 @@ header p{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding-top: 2em;
+	padding-top: 5em;
+	padding-bottom: 5em;
 }
 
 .steps-header{
 	display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.steps-header > h2 {
+	align-self: center;
 }
 .steps{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	padding: 0 2em;
+	flex: 1;
 }
 
 .steps p{
-	padding-top: 1em;
+	/* padding-top: 1em; */
+}
+
+.steps h3{
+	opacity: 0.2;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
 }
 
 .steps img{
@@ -107,18 +146,44 @@ header p{
 }
 
 .sign-up{
-	background-color: #000;
+	background-color: #F4F4F4;
 	height: 200px;
 }
 
-.main-background {
+.primary-background {
 	position: absolute;
-	width: 21vw;
-	height: 32vw;
+	width: 35vw;
+	height: 40vw;
+	opacity: 0.2;
 	top: 0;
 	left: 0;
+	z-index: -1;
 	background-image: url("img/nav-image.jpg");
 	background-size: 200%;
 	background-position-x: -45px;
   /* set height to pixels if you want angle to change with screen width */
+}
+.secondary-background {
+	background-image: url("img/nav-image.jpg");
+	background-size: 200%;
+	background-position-x: -45px;
+	width: 35vw;
+	height: 40vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.first{
+	display: flex;
+	height: 34em;
+	padding-top: 2em;
+}
+
+.btn{
+	background-color: #EC484E;
+	padding: 2%;
+	border-radius: 3px;
+	color: white;
+	width: 30%;
+	text-align: center;
+	margin: 5% 0%;
 }
