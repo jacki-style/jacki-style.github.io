@@ -3,10 +3,10 @@ html{
 	margin:0px; padding:0px;
 	/* height: 1682px; */
 }
-+
+
 body {
 	height:100%;
-	margin:0px;
+	margin: 0px;
 	padding:0px;
 }
 
@@ -15,7 +15,6 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	/* background-image: url("img/background.png"); */
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
 	font-family: "Helvetica Neue";
@@ -27,6 +26,8 @@ nav{
 	justify-content: center;
 	align-items: center;
 	height: 5em;
+	background-color: #E7E7E7;
+
 }
 
 .menu{
@@ -43,16 +44,6 @@ nav{
 	opacity: 0.5;
 	font-family: Kiona;
 }
-/*
-ul {
-  display: grid;
-  grid-template-columns: 1fr repeat(3, auto) 1fr;
-  grid-column-gap: 5px;
-  justify-items: center;
-}
-
-li:nth-child(1) { grid-column-start: 2; } */
-
 
 h1{
 	text-transform: uppercase;
@@ -67,23 +58,19 @@ h2{
 	text-transform: uppercase;
 	font-family: Kiona;
 	text-decoration: none;
-	/* font-size: 200%; */
 	text-align: center;
 	margin: 0;
 	padding: 0;
 }
 
-.content{
-		padding: 0em 8em;
-}
-
-.content > div{
-		/* padding: 2em 0em; */
+.content > div {
+	padding: 5em 8em;
 }
 
 .content p{
 	color: #4E4E4E;
 }
+
 header {
 	position: relative;
 	width: 50%;
@@ -91,15 +78,14 @@ header {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	z-index: 1;
+	color: #4E4E4E;
 }
 
 header h1{
 		opacity: 0.2;
 }
 
-header p{
-	/* text-align: center; */
-}
 
 .header-images{
 	display: flex;
@@ -119,18 +105,29 @@ header p{
 	font-family: Kiona;
 }
 
+.how-it-works{
+	background-color: #FBFBFB;
+}
+
+.how-it-works > .background{
+	position: absolute;
+	right: 0;
+  top: 90vh;
+}
+
 .steps-wrapper{
 	display: flex;
 	justify-content: space-around;
   align-items: flex-start;
-	padding-top: 5em;
-	padding-bottom: 5em;
+	padding-top: 3em;
+	position: relative;
 }
 
 .steps-header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	position: relative;
 }
 
 .steps-header > h2 {
@@ -145,66 +142,87 @@ header p{
 }
 
 .steps p{
-	/* padding-top: 1em; */
+	margin: 0;
+}
+
+h3{
+	font-family: Kiona;
+	font-size: 2em;
+	text-transform: uppercase;
 }
 
 .steps h3{
 	opacity: 0.2;
-	font-size: 2em;
 	margin: 0;
-	padding: 0;
-	font-family: Kiona
+	padding: 0.5em 0;
+	font-family: Kiona;
 }
 
 .steps img{
-	width: 10em;
+	width: 8em;
 	align-self: center;
 }
 
-.sign-up{
-	/* background-color: #F4F4F4; */
-	/* height: 200px; */
-	text-align: center;
+.header-background {
+	width: 50%;
+    background-image: url("img/header-background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 55%;
 }
 
-.primary-background {
-	position: absolute;
-	width: 35vw;
-	height: 40vw;
-	opacity: 0.2;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	background-image: url("img/nav-image.jpg");
-	background-size: 200%;
-	background-position-x: -45px;
-  /* set height to pixels if you want angle to change with screen width */
-}
-.secondary-background {
-	background-image: url("img/nav-image.jpg");
-	background-size: 200%;
-	background-position-x: -45px;
-	width: 35vw;
-	height: 40vw;
-  /* set height to pixels if you want angle to change with screen width */
-}
-
-.first{
+.header{
 	display: flex;
 	height: 34em;
-	padding-top: 2em;
+	padding: 0em 8em;
+	background-color: #E7E7E7;
 }
 
 .btn{
-	background-color: #EC484E;
-	padding: 2%;
-	border-radius: 3px;
-	color: white;
-	width: 30%;
+	padding: 1em;
+	width: 8em;
+	background-color: transparent;
 	text-align: center;
 	margin: 5% 0%;
+	border: 1px solid #979797;
+	cursor: pointer;
+	position: relative;
+	text-transform: uppercase;
 }
 
-footer{
-	margin-top: 3em;
+.btn::after{
+	content: "";
+	background: #F2F2F2;
+	position: absolute;
+	height: 3.5em;
+	width: 10.5em;
+	top: 0.5em;
+	left: 0.5em;
+	z-index: -1;
 }
+
+.sign-up{
+	padding: 1.5em 5em;
+	text-align: center;
+	background-color: #F6F6F6;
+	margin: 4em 10em;
+	z-index: 1;
+	position: relative;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up > .btn::after{
+	background-color: #fff;
+}
+
+.sign-up-section{
+	position: relative;
+	padding-bottom: 2em !important;
+}
+
+
+/* footer{
+	margin-top: 3em;’
+} */
