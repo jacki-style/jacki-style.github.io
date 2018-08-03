@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>JACKI</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="screen">
@@ -19,17 +20,13 @@
     <nav>
       <img src="img/logo.svg" alt="JACKI">
       <div class="menu">
-        <p>OM JACKI</p>
-        <p>KONTAKTA OSS</p>
       </div>
     </nav>
 
 
     <div class="header">
-      <svg class="header-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-      </svg>
-
-      <header>
+        <div class="header-background-container"><img src="img/header-background.jpg" class="header-background" alt="JACKI"></div>
+        <header>
         <h1>“Vad ska jag ha på mig?”</h1>
         <p><span class="brand-name">Jacki</span> är din styleguru som hjälper dig att hitta och skickar hem kläder som du tycker om och som passar dig, både till vardags, till jobbet eller till dejten du har nästa lördag.</p>
         <div class="btn">PROVA NU</div>
@@ -39,16 +36,16 @@
 
     <div class="content">
       <div class="how-it-works">
-        <svg class="background" height="750" width="500">
-          <polygon points="0,0 500,0 500,750 250,750" style="fill:#F6F6F6" />
+        <svg class="how-it-works-shape" height="615" width="500">
+          <polygon points="0,0 500,0 500,615 250,615" style="fill:#F6F6F6" />
         </svg>
         <div class="steps-header">
           <div class="line">
             <svg height="57px">
               <defs>
                 <linearGradient id="e" x1="0" y1="210" x2="100%" y2="210" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#fff" offset="0" />
-                    <stop stop-color="#525252" offset="1" />
+                  <stop offset="0%" style="stop-color:#fff; stop-opacity:0"/>
+                    <stop offset="100%" style="stop-color:#4E4E4E;" />
                 </linearGradient>
             </defs>
             <line x1="0" y1="52%" x2="550" y2="52%" stroke="url(#e)" stroke-width="2" />
@@ -59,8 +56,8 @@
             <svg height="57px">
               <defs>
                 <linearGradient id="f" x1="0" y1="210" x2="100%" y2="210" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#525252" offset="0" />
-                    <stop stop-color="#fff" offset="1" />
+                    <stop offset="0%" style="stop-color:#4E4E4E;"/>
+                    <stop offset="100%" style="stop-color:#fff;stop-opacity:0" />
                 </linearGradient>
               </defs>
               <line x1="0" y1="58%" x2="550" y2="58%" stroke="url(#f)" stroke-width="2" />
@@ -89,10 +86,16 @@
       </div>
 
       <div class="sign-up-section">
-        <p>Med <span class="brand-name">JACKI</span> kommer du inte längre behöva gå på stan och prova kläder i olika butiker eller vada igenom hundratals plagg online för att försöka hitta något som passar. Låt oss göra jobbet istället. Vi hjälper dig att hitta kläder som du tycker om och som passar dig, så att du enkelt kan få exakt den stilen som du vill ha, utan att lägga ner en massa onödig tid på shopping.<p>
+        <p>Med <span class="brand-name">JACKI</span> kommer du inte längre behöva gå på stan och prova kläder i olika butiker eller vada igenom hundratals plagg online för att försöka hitta något som passar. Låt oss göra jobbet istället. Vi hjälper dig att hitta kläder som du tycker om och som passar dig, så att du enkelt kan få exakt den stilen som du vill ha, utan att lägga ner en massa onödig tid på shopping.</p>
         <div class="sign-up">
           <h3>Kom igång</h3>
           <p>Jacki är just nu i uppstartsfasen. Lämna din mailadress här om du vill vara en av de första som får testa tjänsten</p>
+          <div class="line">
+            <svg height="57px">
+              <line x1="0" y1="58%" x2="550" y2="58%" style="stroke:#4E4E4E;stroke-width:2" />
+              </svg>
+        </svg>
+          </div>
           <div style="background-color: #b3b3b3;width: 100%;height: 75px;"></div>
           <div class="btn">Prova nu
       </div>
@@ -100,10 +103,6 @@
     </div>
 
     </div>
-    <!-- <footer> -->
-      <!-- <img src="img/footer_est.png" alt="JACKI">
-
-    </footer> -->
   </div>
 
 </body>
