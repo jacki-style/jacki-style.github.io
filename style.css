@@ -1,3 +1,9 @@
+@font-face {
+		font-family: 'Kiona';
+		src: url('Kiona-Regular.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+}
 /*
 *
 * MISC
@@ -23,7 +29,7 @@ body {
 	padding: 0;
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
-	font-family: "Helvetica Neue";
+	font-family: "Helvetica Neue","Helvetica,Arial","sans-seriff";
 	font-size: 18px;
 }
 
@@ -33,10 +39,11 @@ body {
 
 h1, h2, h3 {
 	color: #4E4E4E;
+	font-family: "Kiona";
+	font-style:
 }
 h1{
 	text-transform: uppercase;
-	font-family: Kiona;
 	text-decoration: none;
 	font-size: 200%;
 	text-align: center;
@@ -45,7 +52,6 @@ h1{
 
 h2{
 	text-transform: uppercase;
-	font-family: Kiona;
 	text-decoration: none;
 	text-align: center;
 	margin: 0;
@@ -53,7 +59,6 @@ h2{
 }
 
 h3{
-	font-family: Kiona;
 	font-size: 2em;
 	text-transform: uppercase;
 }
@@ -142,7 +147,6 @@ nav{
 	margin: auto 1em;
 	text-transform: uppercase;
 	opacity: 0.5;
-	font-family: Kiona;
 }
 
 @media (max-width: 700px) {
@@ -341,7 +345,6 @@ header p {
 	opacity: 0.2;
 	margin: 0;
 	padding: 0.5em 0;
-	font-family: Kiona;
 }
 
 .steps img{
