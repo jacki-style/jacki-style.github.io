@@ -9,6 +9,14 @@
             <stop stop-color="#EC484E" offset="24.090047%"></stop>
             <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
+        <style type="text/css">
+          @font-face {
+          		font-family: 'Kiona';
+          		src: url('/fonts/Kiona-Regular.ttf') format('truetype');
+          		font-weight: normal;
+          		font-style: normal;
+          }
+        </style>
     </defs>
     <g id="SV2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Kiona-Regular, Kiona" font-weight="normal">
         <g id="Desktop" transform="translate(-689.000000, -75.000000)">
