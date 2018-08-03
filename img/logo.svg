@@ -4,21 +4,21 @@
     <title>Logo</title>
     <desc>Created with Sketch.</desc>
     <defs>
+      <style type="text/css">
+        @font-face {
+        		font-family: 'Kiona';
+        		src: url('/fonts/Kiona-Regular.ttf') format('truetype');
+        		font-weight: normal;
+        		font-style: normal;
+        }
+    </style>
         <linearGradient x1="50%" y1="24.090047%" x2="50%" y2="100%" id="linearGradient-1">
             <stop stop-color="#EC484E" offset="0%"></stop>
             <stop stop-color="#EC484E" offset="24.090047%"></stop>
             <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
-        <style type="text/css">
-          @font-face {
-          		font-family: 'Kiona';
-          		src: url('/fonts/Kiona-Regular.ttf') format('truetype');
-          		font-weight: normal;
-          		font-style: normal;
-          }
-        </style>
     </defs>
-    <g id="SV2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Kiona-Regular, Kiona" font-weight="normal">
+    <g id="SV2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Kiona" font-weight="6000">
         <g id="Desktop" transform="translate(-689.000000, -75.000000)">
             <g id="Logo" transform="translate(680.000000, 50.000000)">
                 <text id="K" fill="url(#linearGradient-1)" font-size="72">
