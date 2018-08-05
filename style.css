@@ -30,7 +30,6 @@ body {
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
 	font-family: "Helvetica Neue","Helvetica,Arial","sans-seriff";
-	font-size: 18px;
 }
 
 .main p {
@@ -70,31 +69,68 @@ h3{
 }
 
 .btn{
-	padding: 1em;
-	width: 144px;
+	padding: 10px;
+	width: 200px;
 	background-color: transparent;
 	text-align: center;
-	margin: 0 8px calc(40px + 8px) 0;
+	margin: 0 0px calc(40px + 8px) 0;
 	border: 1px solid #4E4E4E;
 	cursor: pointer;
 	position: relative;
 	text-transform: uppercase;
+	font-family: Kiona;
+	font-size: 18px;
 }
 
 .btn::after{
 	content: "";
 	background: #F2F2F2;
 	position: absolute;
-	height: 60px;
-	width: 182px;
+	height: 45px;
+	width: 200px;
 	top: 8px;
 	left: 8px;
 	z-index: -1;
 }
 
+form {
+  display:  flex;
+  flex-direction:  column;
+  align-items:  center;
+  width:  300px;
+}
+
+label {
+  font-size:  18px;
+  color:  #000;
+  opacity:  .8;
+  font-weight:  400;
+}
+
+input {
+  font-size:  18px;
+  padding:  20px 0px;
+  height:  56px;
+  border:  none;
+  border-bottom:  solid 1px rgba(0,0,0,.1);
+  background:  #F6F6F6;
+  width:  280px;
+  box-sizing:  border-box;
+  transition:  all .3s linear;
+  color:  #000;
+  font-weight:  400;
+  -webkit-appearance:  none;
+}
+
+input:focus {
+    border-bottom:  solid 1px $primary;
+    outline: 0;
+    box-shadow:  0 2px 6px -8px rgba($primary, .45);
+}
+
 @media (max-width: 700px) {
 	.btn {
-		margin: 10% 0;
+		margin: 10px 0;
 	}
 }
 
@@ -132,7 +168,7 @@ nav{
 	align-items: center;
 	height: 100px;
 	background-color: #E7E7E7;
-
+	position: relative;
 }
 
 .menu{
@@ -230,6 +266,20 @@ header p {
 	font-size: 1.3em;
 }
 
+
+.header button{
+	padding: 1em;
+}
+
+.header button{
+	width: 215px;
+}
+
+.header button::after{
+	width: 215px;
+	height: calc(45px + 1em)
+}
+
 @media (max-width: 700px) {
 	.header{
 		flex-direction: column-reverse;
@@ -243,7 +293,6 @@ header p {
 	}
 
 	.main p{
-		/* font-size: 16px; */
 		margin-bottom: 5%;
 	}
 
@@ -410,9 +459,14 @@ header p {
 	display: flex;
   flex-direction: column;
   align-items: center;
+	margin-top: 3.5em;
 }
 
-.sign-up > .btn::after{
+.sign-up .btn{
+	margin: 30px 0;
+}
+
+.sign-up .btn::after{
 	background-color: #fff;
 }
 
@@ -427,6 +481,71 @@ header p {
 
 .sign-up-section > p{
 	padding: 0 2em;
+}
+
+.entry {
+	position:  relative;
+	margin-bottom:  10px;
+	width:  100%;
+}
+
+.entry label {
+	position:  absolute;
+  top: calc(50% - 7px);
+  left:  0;
+  opacity:  0;
+  transition:  all .3s ease;
+  padding-left:  44px;
+}
+
+.entry input{
+	width:  calc(100% - 44px);
+  margin-left:  auto;
+  display:  flex;
+}
+
+.entry input:not(:placeholder-shown) {
+  padding:  28px 0px 12px 0px;
+}
+
+.entry input:not(:placeholder-shown) + label {
+    transform:  translateY(-10px);
+    opacity:  .7;
+}
+
+.entry input:valid:not(:placeholder-shown) + label + .icon svg {
+  opacity:  1;
+  }
+}
+
+.entry input:valid:not(:placeholder-shown) + label + .icon svg path {
+  fill:  #4853ec;
+}
+
+.entry input:not(:valid):not(:focus) + label + .icon {
+  animation-name: shake-shake;
+  animation-duration: .3s;
+}
+
+.entry .icon{
+	position:  absolute;
+  top:  0;
+  left:  0;
+  height:  56px;
+  width:  44px;
+  display:  flex;
+}
+
+.entry .icon svg {
+	height:  30px;
+	width:  30px;
+	margin:  auto;
+	transition:  all .3s ease;
+}
+
+.entry .icon svg path {
+	transition:  all .3s ease;
+	fill: #4853ec;
 }
 
 @media (max-width: 1000px) {
