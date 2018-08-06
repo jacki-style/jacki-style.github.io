@@ -491,7 +491,7 @@ header p {
 
 .entry label {
 	position:  absolute;
-  top: calc(50% - 7px);
+  top: calc(50% - 20px);
   left:  0;
   opacity:  0;
   transition:  all .3s ease;
@@ -510,7 +510,8 @@ header p {
 
 .entry input:not(:placeholder-shown) + label {
     transform:  translateY(-10px);
-    opacity:  .7;
+    opacity:  .5;
+		font-size: 14px;
 }
 
 .entry input:valid:not(:placeholder-shown) + label + .icon svg {
@@ -549,7 +550,6 @@ header p {
 }
 
 @media (max-width: 1000px) {
-/* @media (max-width: 700px) { */
 	.sign-up{
 		margin: 0;
 		padding: 5% 10%;
@@ -565,6 +565,10 @@ header p {
 
 	.sign-up-section > h3 {
 		padding: 2% 2em;
+	}
+
+	.entry input, label{
+		font-size: 16px;
 	}
 }
 
