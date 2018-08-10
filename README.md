@@ -1,1 +1,3 @@
-# jacki-style.github.io
+JACKI
+
+Online personal shopper and stylist
