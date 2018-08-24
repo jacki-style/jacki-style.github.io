@@ -134,13 +134,11 @@ input:focus {
 	}
 }
 
-@media screen and (min-width: 700px) and (max-width: 800px) {
-	.btn {
-		margin: 0;
-	}
-}
-
 @media (max-width: 1000px) {
+	.btn {
+		font-size: 16px;
+	}
+
 	p{
 		font-size: 16px !important;
 	}
@@ -309,7 +307,6 @@ header p {
 	.main p{
 		margin-bottom: 5%;
 	}
-
 
   h1 {
 		font-size: 1.2em;
