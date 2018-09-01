@@ -199,6 +199,21 @@ nav{
 	opacity: 0.5;
 }
 
+.menu > a:nth-child(2) {
+	display: none;
+}
+
+@media (max-width: 500px) {
+	.menu > a:nth-child(1) {
+		display: none;
+	}
+
+	.menu > a:nth-child(2) {
+		display: block;
+	}
+}
+
+
 @media (max-width: 700px) {
 	nav {
 		height: 50px;
