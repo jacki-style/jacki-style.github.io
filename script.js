@@ -14,6 +14,7 @@ return false;
       $('.thanks-newsletter').css('display', 'flex');
       $.post('https://jacki-backend.herokuapp.com/register?email=' + email, function(data) {
       });
+      fbq('track', 'CompleteRegistration');
     }
   });
 
