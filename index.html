@@ -6,6 +6,8 @@
   <meta charset="UTF-8">
   <title>JACKI</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script src="https://use.fontawesome.com/d42a93bf8c.js"></script>
   <script src="https://use.edgefonts.net/source-sans-pro.js"></script>
   <!-- Library for jQuery-->
@@ -32,16 +34,38 @@
 </head>
 
 <body>
+  <div class="fly-in-menu">
+    <div class="fly-in-menu-container">
+      <div class="menu-small">
+        <ul class"">
+          <li><a href="/">Hem</a></li>
+          <li><a href="/information/vanliga-fragar-svar.html">Vanliga frågor & svar</a></li>
+          <li><a href="/information/om-oss.html">Om & Kontakt</a></li>
+        </ul>
+        <ul class"">
+          <li><a href="/allmanna_villkor.html">Allmänna villkor</a></li>
+          <li><a href="/information/integritetspolicy.html">Integritetspolicy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div class="main">
-
-
     <nav>
-      <object data="img/logo.svg" alt="JACKI"></object>
-      <!-- <div class="menu">
-        <a href="eng.html"><span><img src="img/united-kingdom.svg" alt="England">English</span></a>
-        <a href="eng.html"><span><img src="img/united-kingdom.svg" alt="England"></span></a>
-      </div> -->
+      <a href="/"><img src="img/logo.svg" alt="JACKI"></img></a>
+      <div class="menu">
+        <!-- <a href="eng.html"><span><img src="img/united-kingdom.svg" alt="England">English</span></a>
+        <a href="eng.html"><span><img src="img/united-kingdom.svg" alt="England"></span></a> -->
+        <!-- <i class="fas fa-bars"></i> -->
+        <div class="menu-hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <a href="/">Hem</a>
+        <a href="/information/vanliga-fragar-svar.html">FAQ</a>
+        <a href="/information/om-oss.html">Om & Kontakt</a>
+      </div>
 
     </nav>
 
@@ -108,10 +132,10 @@
       </div>
 
 
-      <div class="sign-up-section">
+      <div class="sign-up-section form-box">
         <p>Med <span class="brand-name">JACKI</span> kommer du inte längre behöva gå på stan och prova kläder i olika butiker eller bläddra igenom hundratals plagg online för att försöka hitta något som passar. Låt oss göra jobbet istället. Vi hjälper dig att
           hitta kläder som du tycker om och som passar dig, så att du enkelt kan få exakt den stilen som du vill ha, utan att lägga ner en massa onödig tid på shopping.</p>
-          <div class="sign-up join">
+          <div class="form-box-content join">
             <h3>Kom igång</h3>
             <p>JACKI är just nu i uppstartsfasen. Lämna din mailadress här om du vill vara en av de första som får testa tjänsten.</p>
             <div class="line">
@@ -123,7 +147,7 @@
                 <input id="email" placeholder="E-mailadress" type="email" name="email" id="email" autocomplete="off">
                 <label  class="label-email" for="email">E-mailadress:</label>
                 <div class="icon">
-                  <svg enable-background="new 0 0 100 100" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                  <!-- <svg enable-background="new 0 0 100 100" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                     <style type="text/css">
                     	.st0{fill:none;}
                     </style>
@@ -131,7 +155,8 @@
                     	<path d="m17.5 977c-1.3 0-2.4 1.1-2.4 2.4v45.9c0 1.3 1.1 2.4 2.4 2.4h64.9c1.3 0 2.4-1.1 2.4-2.4v-45.9c0-1.3-1.1-2.4-2.4-2.4h-64.9zm2.4 4.8h60.2v1.2l-30.1 22-30.1-22v-1.2zm0 7l28.7 21c0.8 0.6 2 0.6 2.8 0l28.7-21v34.1h-60.2v-34.1z"/>
                     </g>
                     <rect class="st0" width="100" height="100"/>
-                  </svg>
+                  </svg> -->
+                  <i class="far fa-envelope"></i>
                 </div>
                 <label class="container">Jag godkänner att JACKI skickar mejl till mig när jag har möjlighet att testa tjänsten. JACKI kommer aldrig dela med sig av min mejladress till någon tredje part.
                   <input id="terms" type="checkbox">
@@ -152,10 +177,19 @@
           </div>
       </div>
     </div>
+    </div>
     <footer>
-      <h3>Har du några frågor?</h3>
-      <p>info@jacki.se</p>
+      <div class "information">
+        <h3>Information</h3>
+        <div class="information-links">
+          <a href="/information/vanliga-fragar-svar.html">Vanliga frågor & svar</a>
+          <a href="/information/om-oss.html">Om & Kontakt</a>
+          <a href="/information/allmanna_villkor">Allmänna villkor</a>
+          <!-- <a href="/information/integritetspolicy.html">Integritetspolicy</a> -->
+        </div>
+      </div>
     </footer>
+
 </body>
 
 

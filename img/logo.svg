@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="88px" height="67px" viewBox="0 0 88 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
-    <title>Logo</title>
+<svg width="88px" height="65px" viewBox="0 0 88 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo Copy</title>
     <desc>Created with Sketch.</desc>
     <defs>
-      <style type="text/css">
-        @font-face {
-        		font-family: 'Kiona';
-        		src: url('/fonts/Kiona-Regular.ttf') format('truetype');
-        		font-weight: normal;
-        		font-style: normal;
-        }
-    </style>
-        <linearGradient x1="50%" y1="24.090047%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#EC484E" offset="0%"></stop>
-            <stop stop-color="#EC484E" offset="24.090047%"></stop>
+        <linearGradient x1="50%" y1="27.3380907%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF533D" offset="0%"></stop>
+            <stop stop-color="#FF715E" offset="19.2806178%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="24.090047%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FF533D" offset="0%"></stop>
+            <stop stop-color="#FF715E" offset="20.6082912%"></stop>
             <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
     </defs>
-    <g id="SV2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Kiona" font-weight="6000">
-        <g id="Desktop" transform="translate(-689.000000, -75.000000)">
-            <g id="Logo" transform="translate(680.000000, 50.000000)">
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Kiona-Regular, Kiona" font-weight="normal">
+        <g id="Terms&amp;Conditions" transform="translate(-643.000000, -26.000000)">
+            <g id="Logo-Copy" transform="translate(634.000000, 1.000000)">
                 <text id="K" fill="url(#linearGradient-1)" font-size="72">
-                    <tspan x="53.136" y="72">K</tspan>
+                    <tspan x="52" y="72">K</tspan>
                 </text>
-                <text id="J" fill="url(#linearGradient-1)" font-size="72">
-                    <tspan x="12.408" y="72">J</tspan>
+                <text id="J" fill="url(#linearGradient-2)" font-size="72">
+                    <tspan x="14" y="72">J</tspan>
                 </text>
                 <text id="JACKi" font-size="12" letter-spacing="14" fill="#4A4A4A">
-                    <tspan x="8.718" y="91">JACK</tspan>
-                    <tspan x="95.27" y="91">i</tspan>
+                    <tspan x="8.718" y="89">JACK</tspan>
+                    <tspan x="95.27" y="89">i</tspan>
                 </text>
             </g>
         </g>
