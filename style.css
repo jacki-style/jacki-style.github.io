@@ -253,6 +253,12 @@ nav > a{
   cursor: pointer;
 }
 
+@media screen and (max-width: 700px) {
+	.menu-hamburger{
+		margin-left: 0px;
+	}
+}
+
 .menu-hamburger .bar{
   height: 2px;
   width: 100%;
@@ -358,6 +364,12 @@ nav > a{
 		-webkit-transition: width 2s;
 		transition: width 2s;
 	}
+
+	@media screen and (max-width: 700px) {
+		.fly-in-menu-container{
+			width: 51%;
+		}
+	}
 /* } */
 
 	.menu-small{
@@ -368,6 +380,12 @@ nav > a{
 		width: calc(100% - 80px);
 	}
 
+	@media screen and (max-width: 700px) {
+		.menu-small{
+			padding: 0 20px;
+			width: calc(100% - 40px);
+		}
+	}
 	.menu-small ul{
 		list-style: none;
 		padding-inline-start: 0;
@@ -398,6 +416,11 @@ nav > a{
 		color: rgb(15,34,76,0.65);
 	}
 
+	@media screen and (max-width: 700px)  {
+		.menu-small a{
+			font-size: 11px;
+		}
+	}
 /*
 *
 *
@@ -627,12 +650,6 @@ header p {
 		}
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-	.steps{
-		padding: 10px !important;
-	}
-}
-
 /*
 *
 *
@@ -642,7 +659,6 @@ header p {
 */
 
 .form-box-content{
-	padding: 1.5em 5em;
 	text-align: center;
 	background-color: #F6F6F6;
 	max-width: 550px;
@@ -652,6 +668,25 @@ header p {
   flex-direction: column;
   align-items: center;
 	margin-top: 2.5em;
+}
+
+@media screen and (min-width: 700px) {
+	.form-box-content{
+		padding: 1.5em 5em;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+	.form-box-content{
+		min-width: 320px;
+	}
+}
+
+@media screen (max-width: 1000px) {
+	.steps{
+		padding: 10px !important;
+	}
 }
 
 .form-box-content .btn{
@@ -876,7 +911,7 @@ footer .information-links{
   flex-direction: column;
   flex-wrap: wrap;
   height: 115px;
-  width: 400px;
+  max-width: 400px;
 }
 
 footer .information-links a:hover{
