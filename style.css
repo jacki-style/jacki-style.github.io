@@ -1015,16 +1015,14 @@ footer .information-links a:hover{
 	font-size: 15px;
 }
 
-.info-container h2{
-	text-transform: none;
+.terms-header > li:nth-child(1){
+	margin: 1em 0px;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
-
-.terms-conditions ul{
-	list-style: none;
-	padding-inline-start: 0;
-	font-family: inherit;
-	font-size: 13px;
+.info-container h2{
+	text-transform: none;
 }
 
 .quote{
