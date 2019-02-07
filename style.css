@@ -714,7 +714,7 @@ header p {
 
 .label-email {
 	position:  absolute;
-  top: calc(50% - 63px);
+	top: calc(50% - 70px);
   left:  0;
   opacity:  0;
   transition:  all .3s ease;
@@ -757,6 +757,21 @@ header p {
 .signup-newsletter .entry input:not(:valid):not(:focus) + label + .icon {
   animation-name: shake-shake;
   animation-duration: .3s;
+}
+
+.sign-up-error p{
+	padding-left: 45px;
+	text-align: left;
+	color: #ff0033;
+	font-size: 10px !important;
+}
+
+.error-email{
+	display: none;
+}
+
+.error-response{
+	display:none;
 }
 
 .entry .icon{
