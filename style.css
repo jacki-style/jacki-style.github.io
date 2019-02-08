@@ -181,6 +181,7 @@ nav{
 nav > a{
 	cursor: pointer;
 	z-index: 1;
+	text-align: center;
 }
 
 nav > a > img {

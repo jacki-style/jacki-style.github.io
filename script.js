@@ -37,6 +37,7 @@ $(document).ready(function(){
     terms = $("#terms").prop("checked");
 
     if (terms && isValidEmailAddress(email)) {
+      email = email.replace(/(\+)+/g, "%2B")
       $.post('https://jacki-backend.herokuapp.com/register?email=' + email, function(data) {
       })
         .done(function() {
