@@ -6,7 +6,11 @@
   <meta charset="UTF-8">
   <title>JACKI</title>
   <link href="../style.css" rel="stylesheet" type="text/css" media="screen">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script src="https://use.fontawesome.com/d42a93bf8c.js"></script>
   <script src="https://use.edgefonts.net/source-sans-pro.js"></script>
   <!-- Library for jQuery-->
@@ -14,29 +18,19 @@
   <script src="../script.js"></script>
   <!-- Facebook Pixel Code -->
   <script>
-    ! function(f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function() {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2216733228611474');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '963242283858966');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2216733228611474&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=963242283858966&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
 
@@ -62,9 +56,6 @@
 
 
     <nav class="information">
-      <svg class="how-it-works-shape" height="100" width="650">
-        <polygon points="0,0 650,0 650,100 100,100" style="fill:#F6F6F6" />
-      </svg>
       <a href="../index.html"><img src="../img/logo.svg" alt="JACKI"></img></a>
       <div class="menu">
         <div class="menu-hamburger">
@@ -296,7 +287,7 @@
         <div class="information-links">
           <a href="/information/vanliga-fragar-svar.html">Vanliga frågor & svar</a>
           <a href="/information/om-oss.html">Om oss</a>
-          <a href="/information/allmanna_villkor">Allmänna villkor</a>
+          <a href="/information/allmanna_villkor.html">Allmänna villkor</a>
           <!-- <a href="/information/integritetspolicy.html">Integritetspolicy</a> -->
         </div>
       </div>

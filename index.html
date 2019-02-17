@@ -6,7 +6,10 @@
   <meta charset="UTF-8">
   <title>JACKI</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="screen">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script src="https://use.fontawesome.com/d42a93bf8c.js"></script>
   <script src="https://use.edgefonts.net/source-sans-pro.js"></script>
@@ -61,80 +64,60 @@
         </div>
         <a href="/">Hem</a>
         <a href="/information/vanliga-fragar-svar.html">FAQ</a>
-        <a href="/information/om-oss.html">Om & Kontakt</a>
+        <a href="/information/om-oss.html">Om oss</a>
       </div>
 
     </nav>
 
 
     <div class="header">
-      <div class="header-background-container"><img src="img/header-background.jpg" class="header-background" alt="JACKI"></div>
-      <header>
-        <h1>“Vad ska jag ha på mig?”</h1>
-        <p><span class="brand-name">Jacki</span> är en nystartad tjänst för dig som är modemedveten men som inte har tillräckligt mycket tid att lägga på shopping. Vi gör jobbet åt dig genom att skicka hem kläder till dig som du tycker om och som passar dig, både till vardags, till jobbet eller till dejten du har nästa lördag. </p>
+      <div class="header-background-container">
+        <img src="img/header-background.jpg" class="header-background" alt="JACKI">
+        <img src="img/mobile-header-background.jpg" class="mobile-header-background" alt="JACKI">
+        <img src="img/medium-header-background.jpg" class="medium-header-background" alt="JACKI">
+      </div>
+      <div class="header-text">
+        <p><span class="brand-name">Jacki</span> är din nya digitala personal shopper som hjälper dig som inte har tillräckligt mycket tid att lägga på shopping. Vi skickar hem personliga stilboxar där varje plagg är speciellt utvalda till dig baserad på din stilanalys. Med vår tjänst får du mer tid till annat och du slipper onödig shopping.</p>
         <p><b>För nya kunder bjuder vi på stylingavgiften för första stilboxen! (Värde 259 kr)</b></p>
         <div><button id="header-btn" class="btn" type="submit">Kom igång!</button></div>
-      </header>
+      </div>
     </div>
 
 
     <div class="content">
       <div class="how-it-works">
-        <svg class="how-it-works-shape" height="615" width="500">
-          <polygon points="0,0 500,0 500,615 250,615" style="fill:#F6F6F6" />
-        </svg>
-        <div class="steps-header">
-          <div class="line">
-            <svg height="57px">
-              <defs>
-                <linearGradient id="e" x1="0" y1="210" x2="100%" y2="210" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" style="stop-color:#fff; stop-opacity:0"/>
-                    <stop offset="100%" style="stop-color:#4E4E4E;" />
-                </linearGradient>
-            </defs>
-            <line x1="0" y1="52%" x2="550" y2="52%" stroke="url(#e)" stroke-width="2" />
-          </svg>
-          </div>
-          <h2>Så här fungerar det</h2>
-          <div class="line">
-            <svg height="57px">
-              <defs>
-                <linearGradient id="f" x1="0" y1="210" x2="100%" y2="210" gradientUnits="userSpaceOnUse">
-                    <stop offset="0%" style="stop-color:#4E4E4E;"/>
-                    <stop offset="100%" style="stop-color:#fff;stop-opacity:0" />
-                </linearGradient>
-              </defs>
-              <line x1="0" y1="58%" x2="550" y2="58%" stroke="url(#f)" stroke-width="2" />
-              </svg>
-            </svg>
-          </div>
-        </div>
+        <h2>Så här fungerar det</h2>
         <div class="steps-wrapper">
-          <div class="steps">
-            <img src="img/step-1.png" alt="step-1">
-            <h3>01. Få hem</h3>
-            <p>Fyll i stiltestet så skapar våra stylister en personlig stilbox till dig med 5 klädesplagg. För varje box tillkommer en stylingavgift på 259 kr. Ingen prenumeration krävs.</p>
+          <div class="steps-grid steps">
+            <h3>1. Fyll i stiltestet</h3>
+            <p>Vårt stiltest tar ungefär 8 minuter att fylla i och med hjälp av stiltestet kommer vi kunna få en bättre bild på vem du är.</p>
           </div>
-          <div class="steps">
-            <img src="img/step-2.png" alt="step-2">
-            <h3>02. Prova</h3>
-            <p>Ta din tid och prova kläderna hemma i lugn och ro. </p>
+          <div class="steps-grid steps steps-1"></div>
+          <div class="steps-grid steps steps-2"></div>
+          <div class="steps-grid steps">
+            <h3>2. Styling pågår</h3>
+            <p>Våra stylister skapar din stilbox baserad på dina svar från stiltestet. För varje box tillkommer en stylingavgift på <s>259 kr</s> <b>just nu 0 kr.</b>. Våra stylister kommer hjälpa dig att upptäcka nya trender, stilar och märken.</p>
           </div>
-          <div class="steps">
-            <img src="img/step-3.png" alt="step-3">
-            <h3>03. Behåll</h3>
-            <p>Behåll plaggen som du tycker om och skicka tillbaka resten. Du betalar bara för kläderna som du behåller.</p>
+          <div class="steps-grid steps">
+            <h3>3. Bekräfta</h3>
+            <p>När stilboxen är klar får du ett mejl där du har möjligheten att få en förhandsgranskning av klädesplaggen vi har valt ut. De klädesplaggen du väljer att gå vidare med kommer levereras hem till dig. <b>Gratis Frakt självklart. </b></p>
           </div>
-
+          <div class="steps-grid steps steps-3"></div>
+          <div class="steps-grid steps steps-4"></div>
+          <div class="steps-grid steps">
+            <h3>4. Prova & Behåll</h3>
+            <p>Ta din tid och prova kläderna hemma i lugn och ro. Behåll plaggen som du tycker om och skicka tillbaka resten. Du betalar bara för kläderna som du behåller. </p>
+          </div>
         </div>
       </div>
 
       <div class="sign-up-section form-box">
+        <h1>Du är 8 minuter från din personliga stilbox. </h1>
         <p>Med <span class="brand-name">JACKI</span> kommer du inte längre behöva gå på stan och prova kläder i olika butiker eller bläddra igenom hundratals plagg online för att försöka hitta något som passar. Låt oss göra jobbet istället. Vi hjälper dig att
           hitta kläder som du tycker om och som passar dig, så att du enkelt kan få exakt den stilen som du vill ha, utan att lägga ner en massa onödig tid på shopping.</p>
           <div class="form-box-content join">
             <h3>Kom igång</h3>
-            <p>Vill du också spara tid och pengar på shopping? Börja med att lämna din mejladress här så får du ett mejl där du kan fylla i ditt stiltest. Självklart binder du inte till någon prenumeration. <b>Vi bjuder på stylingavgiften för första paketet! (Värde 259 kr)</b> </p>
+            <p>Vill du spara in tid och pengar på shopping och samtidigt klär dig fint? Kom igång nu och få gratis stilråd! (Värde 259 kr). <b>Du binder dig inte till någon prenumeration.</b></p>
             <div class="line">
               <svg height="45px">
               <line x1="0" y1="52%" x2="100%" y2="52%" stroke="#D7D7D7" stroke-width="2" /></svg></div>
@@ -178,7 +161,7 @@
         <div class="information-links">
           <a href="/information/vanliga-fragar-svar.html">Vanliga frågor & svar</a>
           <a href="/information/om-oss.html">Om & Kontakt</a>
-          <a href="/information/allmanna_villkor">Allmänna villkor</a>
+          <a href="/information/allmanna_villkor.html">Allmänna villkor</a>
           <!-- <a href="/information/integritetspolicy.html">Integritetspolicy</a> -->
        </div>
       </div>
