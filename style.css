@@ -91,7 +91,6 @@ h3{
 	border: 1px solid #4E4E4E;
 	cursor: pointer;
 	position: relative;
-	text-transform: uppercase;
 	font-family: var(--primary-font-family);
 	font-size: 16px;
 }
