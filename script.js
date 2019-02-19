@@ -35,16 +35,24 @@ $(document).ready(function(){
   $("#sign-up").on("click", function(){
     email = $("#email").val();
     terms = $("#terms").prop("checked");
-
     if (terms && isValidEmailAddress(email)) {
+      $('.primary-btn-text').css('display', 'none');
+      $('.spinner-border').css('display', 'inline-block');
+      $("#sign-up").prop('disabled', true);
       email = email.replace(/(\+)+/g, "%2B")
       $.post('https://jacki-backend.herokuapp.com/register?email=' + email, function(data) {
       })
         .done(function() {
           $('.join').css('display', 'none');
           $('.thanks-newsletter').css('display', 'flex');
+          $('.primary-btn-text').css('display', 'flex');
+          $('.spinner-border').css('display', 'none');
+          $("#sign-up").prop('disabled', false);
         })
         .fail(function() {
+          $('.primary-btn-text').css('display', 'flex');
+          $('.spinner-border').css('display', 'none');
+          $("#sign-up").prop('disabled', false);
           $(".error-response").show()
         })
       fbq('track', 'CompleteRegistration');

@@ -10,6 +10,7 @@
 
 :root {
   --primary-blue: #202E4D;
+	--primary-coral: #FF533D;
 	--primary-gold: #E6DED3;
 	--secondary-gold: #F6F1EB;
 	--primary-font-family: 'Raleway', sans-serif;
@@ -82,28 +83,47 @@ h3{
 	color: var(--primary-blue);
 }
 
-.btn{
-	padding: 10px;
-	width: 200px;
-	background-color: transparent;
-	text-align: center;
-	margin: 0 0px calc(40px + 8px) 0;
-	border: 1px solid #4E4E4E;
-	cursor: pointer;
-	position: relative;
-	font-family: var(--primary-font-family);
-	font-size: 16px;
+.primary-btn{
+	padding: 12px;
+  width: 165px;
+  background-color: var(--primary-coral);
+  text-align: center;
+  margin: 0 0px calc(40px + 8px) 0;
+  border: 0px solid #4E4E4E;
+  cursor: pointer;
+  position: relative;
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+  color: white;
+	border-radius: 3px;
 }
 
-.btn::after{
-	content: "";
-	background: var(--primary-gold);
-	position: absolute;
-	height: 45px;
-	width: 200px;
-	top: 8px;
-	left: 8px;
-	z-index: -1;
+#sign-up{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#sign-up:disabled{
+	cursor: wait;
+}
+
+@keyframes spinner-border{
+	to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+}
+
+.spinner-border{
+	display: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: text-bottom;
+  border: .15em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border .75s linear infinite;
+  animation: spinner-border .75s linear infinite;
+	color: #f8f9fa;
 }
 
 .form {
@@ -142,13 +162,13 @@ input:focus {
 }
 
 @media (max-width: 700px) {
-	.btn {
+	.primary-btn {
 		margin: 10px 0;
 	}
 }
 
 @media (max-width: 1000px) {
-	.btn {
+	.primary-btn {
 		font-size: 16px;
 	}
 
@@ -487,21 +507,6 @@ nav > a > img {
 	font-size: 1em;
 }
 
-
-.header button{
-	padding: 1em;
-	margin: 0;
-}
-
-.header button{
-	width: 148px;
-}
-
-.header button::after{
-	width: 148px;
-	height: calc(35px + 1em)
-}
-
 @media (max-width: 730px) {
 	.header{
 		flex-direction: column;
@@ -610,6 +615,7 @@ nav > a > img {
 	display: grid;
   align-items: center;
 	justify-items: center;
+	background-color: #FBFBFB;
 }
 
 .steps-wrapper{
@@ -745,13 +751,9 @@ nav > a > img {
 	}
 }
 
-.form-box-content .btn{
+.form-box-content .primary-btn{
 	margin: 20px 0;
 }
-
-/* .form-box-content .btn::after{
-	background-color: #fff;
-} */
 
 .sign-up-section > p{
 	padding: 0 2em;
