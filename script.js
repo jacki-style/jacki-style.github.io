@@ -16,6 +16,10 @@ $(document).ready(function(){
     $(".fly-in-menu").removeClass('active');
   });
 
+  $(".fill-form-btn").on("click", function(){
+    fbq('track', 'CompleteRegistration');
+  });
+
   $(".FAQ-short").on("click", function(){
     idSection = $(this).attr('id');
     $("html, body, .main").animate({
