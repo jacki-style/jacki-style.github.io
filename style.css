@@ -55,7 +55,7 @@ body {
 }
 
 h1, h2, h3 {
-	color: #4E4E4E;
+	color: var(--primary-blue);
 	font-family: var(--primary-font-family);
 }
 h1{
@@ -85,17 +85,15 @@ h3{
 
 .primary-btn{
 	padding: 12px;
-  width: 165px;
-  background-color: var(--primary-coral);
-  text-align: center;
-  margin: 0 0px calc(40px + 8px) 0;
-  border: 0px solid #4E4E4E;
-  cursor: pointer;
-  position: relative;
-  font-family: var(--primary-font-family);
-  font-size: 16px;
-  color: white;
+	width: 165px;
+	background-color: var(--primary-coral);
+	text-align: center;
+	cursor: pointer;
+	font-family: var(--primary-font-family);
+	font-size: 16px;
+	color: white;
 	border-radius: 3px;
+	text-decoration: none;
 }
 
 #sign-up{
@@ -454,128 +452,70 @@ nav > a > img {
 	height: 100%;
 }
 
-.header-background-container {
-	align-self: flex-end;
-	position: relative;
-}
-
-.header-background {
-	display: block;
-	width: 100%;
-	height: auto;
-	/* background-image: url("img/header-background.jpg") */
-}
-
-.mobile-header-background {
-	display: none;
-}
-
-.medium-header-background{
-	display: none;
-}
-
 .header{
 	display: flex;
 	flex-direction: row;
   justify-content: center;
 	position: relative;
+	background: #ffffff url("img/header-background.JPG") no-repeat;
+	background-position: 50% 42%;
+	background-size: 100%;
+	height: 480px;
 }
 
 .header-text {
-	position: absolute;
-	max-width: 500px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-	color: #4E4E4E;
-  left: 50%;
-	height: 100%;
-	padding: 0 2em;
-	text-align: center
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  max-width: 50%;
 }
 
 .header-text h1{
-		opacity: 0.2;
+	text-transform: uppercase;
+  font-size: 300%;
+  margin: 0;
+  letter-spacing: 0.1em;
 }
 
-.header-text p {
-	line-height: 2em !important;
-	padding: 0;
-	margin: 0 0 40px 0;
-	font-size: 1em;
+.header-text h2{
+	margin: 15px 0px;
 }
 
 @media (max-width: 730px) {
 	.header{
 		flex-direction: column;
-		align-items: center;
-	}
-
-	.header-background-container {
-		align-self: flex-start;
-		margin-bottom: 0;
-
+    align-items: center;
+		height: 300px;
+    background-size: 140%;
 	}
 
 	.header-text{
-		top: 0;
-    left: 0;
-    width: 100%;
-    position: relative;
 		padding: 5%;
-		box-sizing: border-box;
+    max-width: 80%;
 	}
 
-	.medium-header-background{
-		display: none !important;
-	}
-
-	.mobile-header-background{
-		display: block;
-		max-width: 100%;
+	.header-text h1{
+		font-size: 1.5em;
 	}
 }
-
-@media screen and (min-width: 730px) and (max-width: 830px) {
-	.header-background-container img{
-		transform: translateX(-7%);
-	}
-}
-
-@media screen and (min-width: 970px) and (max-width: 1090px) {
-	.header-text{
-		max-width: 555px;
-	}
-}
-
 
 @media screen and (min-width: 730px) and (max-width: 1090px) {
-
+	.header{
+		height: 400px;
+	}
 	.header-text{
 		right: 0;
     left: auto;
-    width: 50%;
-	}
-
-	.header-background-container{
-		overflow: hidden;
+    max-width: 80%;
 	}
 }
 
 @media (max-width: 1090px) {
 	.main p{
 		margin-bottom: 5%;
-	}
-
-	.header-background{
-		display: none;
-	}
-
-	.medium-header-background{
-		display: block;
-		max-height: 350px;
 	}
 }
 
@@ -590,7 +530,8 @@ nav > a > img {
 */
 
 .content > div {
-	padding: 3% 15%;
+	padding:5% 15%;
+	margin-bottom: 5%;
 }
 
 .content p{
@@ -718,30 +659,21 @@ nav > a > img {
 *
 */
 
-.form-box-content{
-	text-align: center;
-	background-color: var(--secondary-gold);
-	max-width: 550px;
-	z-index: 1;
-	position: relative;
-	display: flex;
+.sign-up-section {
+	max-width: 50%;
+  border: solid 2px var(--secondary-gold);
+  margin: 0% auto;
+  padding: 3% !important;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-	margin-top: 2.5em;
+  justify-content: center;
+	align-items: center;
 }
 
-@media screen and (min-width: 700px) {
-	.form-box-content{
-		padding: 1.5em 5em;
-	}
-}
-
-
-@media screen and (max-width: 700px) {
-	.form-box-content{
-		min-width: 320px;
-		padding: 5%;
-    box-sizing: border-box;
+@media screen and (max-width: 730px) {
+	.sign-up-section {
+		max-width: 80%;
+		margin-top: 10%;
 	}
 }
 
@@ -750,13 +682,17 @@ nav > a > img {
 		padding: 10px !important;
 	}
 }
-
-.form-box-content .primary-btn{
-	margin: 20px 0;
+.sign-up-section > h1{
+	padding: 0 2em;
+	margin: 0;
 }
 
 .sign-up-section > p{
 	padding: 0 2em;
+}
+
+.sign-up-section > div{
+	margin-top: 15px;
 }
 
 .entry {
