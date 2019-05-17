@@ -290,6 +290,17 @@ nav > a > img {
 	}
 }
 
+.warning-mail{
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	background-color: var(--primary-coral);
+	color: white;
+}
+
+.warning-mail a{
+	color: white;
+}
 
 /*
 *
