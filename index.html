@@ -92,7 +92,6 @@
   </div>
 
   <div class="main">
-    <div class="warning-mail">Om du inte har fått något mejl från oss om att vi har mottagit din stilprofil, vänligen kontakta <a href="mailto:info@jacki.se">info@jacki.se</a>.</div>
     <nav>
       <a href="/"><img src="img/logo.svg" alt="JACKI"></img></a>
       <div class="menu">
@@ -113,7 +112,13 @@
       <div class="header-text">
         <h1>Spara tid och pengar på shopping.</h1>
         <h2>Våra modeexperter skapar personliga stilboxar med outfits till dig. Få din stilbox nu! </h2>
-        <div class="fill-form-btn"><a id="header-btn" class="primary-btn" href="/style/style-profile.html"href="/style/style-profile.html">Fyll i stilprofilen</a></div>
+        <form class="form">
+          <input type="email" id="header-email" class="form__field" placeholder="Your E-Mail Address" />
+          <button type="button" id ="header-btn" class="btn btn--primary btn--inside uppercase disabled">Sätt igång!</button>
+          <div id="header-error-email" class="sign-up-error error-email">
+            <p>Ange en giltig e-postadress, t.ex. namn@domain.se</p>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -149,7 +154,13 @@
         <h1>Du är 8 minuter från din personliga stilbox. </h1>
         <p>Med <span class="brand-name">JACKI</span> kommer du inte längre behöva gå på stan och prova kläder i olika butiker eller bläddra igenom hundratals plagg online för att försöka hitta något som passar. Låt oss göra jobbet istället. Vi hjälper dig att
           hitta kläder som du tycker om och som passar dig, så att du enkelt kan få exakt den stilen som du vill ha, utan att lägga ner en massa onödig tid på shopping. <b>Sätt igång!</b></p>
-          <div class="fill-form-btn"><a id="header-btn" class="primary-btn" href="/style/style-profile.html"href="/style/style-profile.html">Fyll i stilprofilen</a></div>
+      	<form class="form" style="margin-top: 1.5em;">
+      		<input type="email" class="form__field" placeholder="Your E-Mail Address" />
+          <button type="button" id ="header-btn" class="btn btn--primary btn--inside uppercase">Sätt igång!</button>
+          <div id="sign-up-error-email" class="sign-up-error error-email">
+            <p>Ange en giltig e-postadress, t.ex. namn@domain.se</p>
+          </div>
+        </form>
       </div>
     </div>
     </div>

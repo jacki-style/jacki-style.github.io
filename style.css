@@ -11,6 +11,7 @@
 :root {
   --primary-blue: #202E4D;
 	--primary-coral: #FF533D;
+	--primary-blue2: #5767FF;
 	--primary-gold: #E6DED3;
 	--secondary-gold: #F6F1EB;
 	--primary-font-family: 'Raleway', sans-serif;
@@ -86,7 +87,7 @@ h3{
 .primary-btn{
 	padding: 12px;
 	width: 165px;
-	background-color: var(--primary-coral);
+	background-color: var(--primary-blue2);
 	text-align: center;
 	cursor: pointer;
 	font-family: var(--primary-font-family);
@@ -294,7 +295,7 @@ nav > a > img {
 	width: 100%;
 	padding: 10px;
 	text-align: center;
-	background-color: var(--primary-coral);
+	background-color: var(--primary-blue2);
 	color: white;
 }
 
@@ -436,11 +437,6 @@ nav > a > img {
 	margin: 1em 0px;
 }
 
-.header-text div{
-	display: flex;
-	margin: 3% 0;
-}
-
 @media (max-width: 730px) {
 	.header{
 		flex-direction: column;
@@ -451,7 +447,7 @@ nav > a > img {
 
 	.header-text{
 		padding: 5%;
-    max-width: 80%;
+    max-width: 100%;
 	}
 
 	.header-text h1{
@@ -491,7 +487,6 @@ nav > a > img {
 *
 *
 */
-
 .content > div {
 	padding:5% 15%;
 	margin-bottom: 5%;
@@ -672,6 +667,100 @@ nav > a > img {
 		padding: 2% 2em;
 	}
 }
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.btn {
+	display: inline-block;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	transition: all 200ms ease-in;
+	cursor: pointer;
+}
+
+.btn--primary {
+		background: var(--primary-blue2);
+		color: #ffffff;
+		box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+		border-radius: 2px;
+		padding: 12px 36px;
+}
+
+.btn--primary:hover {
+	background: #3447fc;
+}
+
+.btn--primary:active {
+	background: var(--primary-blue2);
+	box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+
+.btn--inside {
+	margin-left: -96px;
+}
+
+.form {
+	display: block;
+  margin-top: 0em;
+}
+
+.form__field {
+	width: 360px;
+	background: #fff;
+	color: #a3a3a3;
+	font: inherit;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+	border: 0;
+	outline: 0;
+	padding: 22px 18px;
+}
+
+@media screen and (max-width: 600px) {
+	.form{
+		width: 100%;
+	}
+
+	.form__field{
+		width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+	}
+
+	.form .btn--primary{
+		display: block;
+    margin: 0 auto;
+    padding-top: 8px;
+	}
+
+	.sign-up-error p{
+		font-size: 10px !important;
+		text-align: center !important;
+	}
+}
+
+.sign-up-error p{
+	text-align: left;
+  color: #ff0033;
+  font-size: 12px;
+}
+
+
+ .error-email{
+	display: none;
+}
+
+/*
+* Footer
+*
+*
+ */
 
 footer{
 	margin-top: 1.5em;
