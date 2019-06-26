@@ -27,7 +27,7 @@ $(document).ready(function(){
       console.log($(this).siblings('input').val())
       var email = $(this).siblings('input').val();
       email = email.replace(/(\+)+/g, "%2B")
-      $.post('http://localhost:3000/register?email=' + email, function(data) {
+      $.post('https://jacki-backend.herokuapp.com/register?email=' + email, function(data) {
         location.href="style/style-profile"
       })
       fbq('track', 'CompleteRegistration');
