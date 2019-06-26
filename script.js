@@ -24,12 +24,10 @@ $(document).ready(function(){
 
   $(".btn--primary").on("click", function () {
     if(!$(this).hasClass("disabled")){
-      console.log($(this).siblings('input').val())
       var email = $(this).siblings('input').val();
       email = email.replace(/(\+)+/g, "%2B")
-      $.post('https://jacki-backend.herokuapp.com/register?email=' + email, function(data) {
-        location.href="style/style-profile"
-      })
+      $.post('https://jacki-backend.herokuapp.com/register?email=' + email)
+      window.location.href = "/style/style-profile";
       fbq('track', 'CompleteRegistration');
     }
   })
