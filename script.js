@@ -26,8 +26,9 @@ $(document).ready(function(){
     if(!$(this).hasClass("disabled")){
       var email = $(this).siblings('input').val();
       email = email.replace(/(\+)+/g, "%2B")
-      $.post('https://jacki-backend.herokuapp.com/register?email=' + email)
-      window.location.href = "/style/style-profile";
+      $.post('https://jacki-backend.herokuapp.com/register?email=' + email, function(data) {
+        window. location.href="https://forms.gle/aeyrpmfLjAEBnk9m9"
+      })
       fbq('track', 'CompleteRegistration');
     }
   })
